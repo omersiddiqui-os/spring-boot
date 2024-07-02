@@ -153,3 +153,14 @@ eclipse {
 		}
 	}
 }
+plugins {
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "omersiddiqui-os_spring-boot"
+    property "sonar.organization", "omersiddiqui-os"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
